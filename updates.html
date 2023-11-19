@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Update Checker</title>
+</head>
+<body>
+    <h1>AutoTools should input the current version here</h1>
+    <input id="version" type="number">
+    <button type="button" id="submit" onclick="cfu()">Submit</button>
+    <script>
+        function cfu() {
+            inpt = document.getElementById("version");
+            currentVersion = 0.1;
+            if (inpt.value < 0.1) {
+                window.open("about:blank")
+            }
+        }
+    </script>
+</body>
